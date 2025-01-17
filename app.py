@@ -132,8 +132,8 @@ try:
         st.subheader(calculate())
 
         st.caption("-Overtime and holiday (other than Sundays) working can not be calculated yet with this program. ")
-        st.caption("-In the case your working time is not continuous in a day and you want to calculate a "
-                 "weekly salary with more that one shift for a same day, it is not automatically supported yet. But "
+        st.caption("-In the case your working time is not continuous in a day and you want to calculate your "
+                 "weekly salary with more than one shift for a same day, it is not automatically supported yet. But "
                  "still you can fill as many as form and make calculation for every different shift of you, "
                  "then you can summarize them manually.")
 
