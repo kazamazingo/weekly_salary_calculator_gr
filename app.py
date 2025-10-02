@@ -45,7 +45,7 @@ st.caption("*Enter your weekly working schedule below as 24 hours time format se
 
 d = {'days': ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], 'start time': ["","" ,"" ,"" ,"" ,"" ,"" ], 'end time': ["", "", "", "", "", "", ""]}
 df = pd.DataFrame(data=d)
-edited_df = st.data_editor(df, width=None, height=None, use_container_width=False, hide_index=True, column_order=None, column_config=None, num_rows="fixed", disabled=("col0"), key=None, on_change=None, args=None, kwargs=None)
+edited_df = st.data_editor(df, width="stretch", height="auto", use_container_width=False, hide_index=True, column_order=None, column_config=None, num_rows="fixed", disabled=("col0"), key=None, on_change=None, args=None, kwargs=None)
 
 
 monday = Regular("Monday",0,0,0)
@@ -144,3 +144,4 @@ except IndexError:
 except ValueError:
     st.write("Error! You must enter the time value in the right format. Choose a valid format as time (19:00 or "
              "19:30) or number (19 or 19.5), do not use any other letter or character. ")
+
