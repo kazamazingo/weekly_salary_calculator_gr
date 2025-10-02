@@ -38,7 +38,7 @@ class Bonus(Day):
 st.title("Weekly Salary Calculator")
 
 
-hourly_wage = float(st.number_input("Hourly Wage (legal minimum : 4.78 )", min_value=None, max_value=None, value="min", step=None, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="min 4.78", disabled=False, label_visibility="visible"))
+hourly_wage = float(st.number_input("Hourly Wage", min_value=None, max_value=None, value="min", step=None, format=None, key=None, help=None, on_change=None, args=None, kwargs=None, placeholder="min 4.78", disabled=False, label_visibility="visible"))
 
 
 st.caption("*Enter your weekly working schedule below as 24 hours time format separated by ':' or just simple number format, both are accepted as long as you don't mix both of them for the same day. (e.g. 04:00 or 4, 04:30 or 4.5)*")
@@ -144,4 +144,5 @@ except IndexError:
 except ValueError:
     st.write("Error! You must enter the time value in the right format. Choose a valid format as time (19:00 or "
              "19:30) or number (19 or 19.5), do not use any other letter or character. ")
+
 
